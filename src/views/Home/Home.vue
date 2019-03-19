@@ -992,7 +992,7 @@ flex-direction: row;flex-wrap: wrap">
     </div>
   </div>
 </template>
-
+//123
 <script>
 import navBar from '../../components/navBar/navBar'
 export default {
