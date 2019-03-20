@@ -1,251 +1,244 @@
 .home{
-  .topBar{
-    height: 30px;
+  .topBars{
     background: #f2f2f2;
-    padding: 0px 100px ;
-    .loginArea{
-      width: 185px;
-      float: left;
-      line-height: 30px;
-      b{
-        color: #666666;
-        font-weight: 400;
-      }
-      a{
-        color: #e60000;
-        margin-left: 7px;
-      }
-      span{
-        color: #d1d1d1;
-        margin: 0 5px;
-      }
-    }
-    .personalArea{
-      width: 420px;
-      float: right;
-      line-height: 30px;
-    }
-    .personalArea li{
-      display: inline;
-      list-style: none;
-      margin: 0px 18px 0px 18px;
-    }
-    .personalArea li:hover{
-      color: #e70b1c;
-    }
-  }
-  .searchBar{
-    padding: 0px 100px ;
-    height: 100px;
-    .logo{
-      float: left;
-      margin-top: 30px;
-    }
-    .searchArea{
-      margin-top: 20px;
-      margin-left: 60px;
-      float: left;
-      width: 460px;
-    }
-    .notice{
-      float: right;
-      margin-top: 30px;
-      margin-right: 40px;
-      .seamless-warp {
-        height: 40px;
-        overflow: hidden;
-        line-height:40px;
-      }
-    }
-  }
-  .classCarousel{
-    padding: 0 100px;
-    .class-left{
-      width: 200px;
-      padding: 10px 15px;
-      float: left;
-      border: 1px solid #e60000;
-      .literature{
-        color: #e60000;
-        font-family: 'Microsoft YaHei';
-        font-size: 16px;
-        cursor: pointer;
-        h3{
-          float: left;
+    .topBar{
+      width: 1200px;
+      height: 30px;
+      margin: auto;
+      .loginArea{
+        width: 185px;
+        float: left;
+        line-height: 30px;
+        b{
+          color: #666666;
           font-weight: 400;
         }
-        p{
-          margin-right: 12px;
+        a{
+          color: #e60000;
+          margin-left: 7px;
         }
-        p:hover{
-          color: #e70b1c;
+        span{
+          color: #d1d1d1;
+          margin: 0 5px;
+        }
+      }
+      .personalArea{
+        width: 420px;
+        float: right;
+        line-height: 30px;
+      }
+      .personalArea li{
+        display: inline;
+        list-style: none;
+        margin: 0px 18px 0px 18px;
+      }
+      .personalArea li:hover{
+        color: #e70b1c;
+      }
+    }
+  }
+  .searchBars{
+    .searchBar{
+      width: 1200px;
+      margin: auto;
+      height: 100px;
+      .logo{
+        float: left;
+        margin-top: 30px;
+      }
+      .searchArea{
+        margin-top: 20px;
+        margin-left: 60px;
+        float: left;
+        width: 460px;
+      }
+      .notice{
+        float: right;
+        margin-top: 30px;
+        margin-right: 40px;
+        .seamless-warp {
+          height: 40px;
+          overflow: hidden;
+          line-height:40px;
         }
       }
     }
-    .class-right{
-      width: 980px;
-      margin-left: 210px;
-      .preferential{
+  }
+  .classCarousels{
+    .classCarousel{
+      width: 1200px;
+      margin: auto;
+      .class-left{
+        width: 200px;
+        padding: 10px 15px;
         float: left;
-        background: #eff2fa;
-        padding: 10px;
-        width: 750px;
-        .newProduct{
-          .mainEditor{
-            padding: 15px 15px 0;
-            height: 180px;
-            border-bottom: 1px solid #eef1f9;
-            display: flex;
-            flex-direction: row;
-            .mainImg{
-              height: 160px;
-              width: 189px;
-              text-align: center;
-            }
-            .icon{
-              max-width: 42px;
-              max-height: 42px;
-              position: absolute;
-              top: 0;
-              right: 0;
-            }
-            .mainText{
-              h2{
-                text-align: left;
-                margin-top: 10px;
-                line-height: 30px;
-                font-size: 16px;
-                font-family: "Microsoft YaHei";
-                cursor: pointer;
+        border: 1px solid #e60000;
+        .literature{
+          color: #e60000;
+          font-family: 'Microsoft YaHei';
+          font-size: 16px;
+          cursor: pointer;
+          h3{
+            float: left;
+            font-weight: 400;
+          }
+          p{
+            margin-right: 12px;
+          }
+          p:hover{
+            color: #e70b1c;
+          }
+        }
+      }
+      .class-right{
+        width: 980px;
+        margin-left: 210px;
+        .preferential{
+          float: left;
+          background: #eff2fa;
+          padding: 10px;
+          width: 750px;
+          .newProduct{
+            .mainEditor{
+              padding: 15px 15px 0;
+              height: 180px;
+              border-bottom: 1px solid #eef1f9;
+              display: flex;
+              flex-direction: row;
+              .mainImg{
+                height: 160px;
+                width: 189px;
+                text-align: center;
               }
-              h2:hover{
-                color:#e60000;
+              .icon{
+                max-width: 42px;
+                max-height: 42px;
+                position: absolute;
+                top: 0;
+                right: 0;
+              }
+              .mainText{
+                h2{
+                  text-align: left;
+                  margin-top: 10px;
+                  line-height: 30px;
+                  font-size: 16px;
+                  font-family: "Microsoft YaHei";
+                  cursor: pointer;
+                }
+                h2:hover{
+                  color:#e60000;
+                }
+                .priceWrap{
+                  overflow: hidden;
+                  line-height: 30px;
+                  span{
+                    float: left;
+                    font-size: 18px;
+                    font-family: "Microsoft YaHei";
+                  }
+                  .sellPrice{
+                    color: #e60000;
+                  }
+                  .price{
+                    color: #999999;
+                    margin-left: 11px;
+                    text-decoration-line: line-through;
+                  }
+                }
+                .mainFont{
+                  height: 96px;
+                  overflow: hidden;
+                }
+                .mainFont p{
+                  color: #666666;
+                  height: 96px;
+                  line-height: 24px;
+                  text-indent: 2em;
+                  margin-top: 1px;
+                }
+              }
+            }
+            .tabBook{
+              height: 250px;
+              background: #fff;
+              padding:0 1px;
+              margin-top:10px;
+              ul li{
+                float: left;
+                width: 182px;
+                overflow: hidden;
+                position: relative;
+              }
+              .Img{
+                text-align: center;
+                margin-top: 7px;
+                height: 158px;
+              }
+              .icon{
+                position: absolute;
+                top: 0;
+                right: 0;
+              }
+              .name{
+                padding: 10px 15px 0;
+                line-height: 18px;
+                overflow: hidden;
+                p{
+                  color: #333333;
+                  font-size: 12px;
+                }
               }
               .priceWrap{
                 overflow: hidden;
-                line-height: 30px;
+                padding: 4px 15px 15px 15px;
+                line-height: 20px;
                 span{
                   float: left;
-                  font-size: 18px;
                   font-family: "Microsoft YaHei";
                 }
                 .sellPrice{
                   color: #e60000;
+                  font-size: 16px;
                 }
                 .price{
                   color: #999999;
-                  margin-left: 11px;
+                  font-size: 12px;
+                  margin-left: 10px;
                   text-decoration-line: line-through;
                 }
               }
-              .mainFont{
-                height: 96px;
-                overflow: hidden;
-              }
-              .mainFont p{
-                color: #666666;
-                height: 96px;
-                line-height: 24px;
-                text-indent: 2em;
-                margin-top: 1px;
-              }
             }
-          }
-          .tabBook{
-            height: 250px;
-            background: #fff;
-            padding:0 1px;
-            margin-top:10px;
-            ul li{
-              float: left;
-              width: 182px;
-              overflow: hidden;
-              position: relative;
-            }
-            .Img{
-              text-align: center;
-              margin-top: 7px;
-              height: 158px;
-            }
-            .icon{
-              position: absolute;
-              top: 0;
-              right: 0;
-            }
-            .name{
-              padding: 10px 15px 0;
-              line-height: 18px;
-              overflow: hidden;
-              p{
-                color: #333333;
-                font-size: 12px;
-              }
-            }
-            .priceWrap{
-              overflow: hidden;
-              padding: 4px 15px 15px 15px;
-              line-height: 20px;
-              span{
-                float: left;
-                font-family: "Microsoft YaHei";
-              }
-              .sellPrice{
-                color: #e60000;
-                font-size: 16px;
-              }
-              .price{
-                color: #999999;
-                font-size: 12px;
-                margin-left: 10px;
-                text-decoration-line: line-through;
-              }
-            }
-          }
 
-        }
-      }
-      .bestSell{
-        float: left;
-        width: 230px;
-        padding: 0 10px;
-        .hostTitle{
-          line-height: 32px;
-          height: 32px;
-          overflow: hidden;
-          background: #fff;
-          h2{
-            float: left;
-            font-size: 16px;
-            color: #e60000;
-            font-family: "Microsoft YaHei";
-            font-weight: 400;
-          }
-          p{
-            float: right;
-            color: #999999
           }
         }
-        .hostType{
-          border: 1px solid #DDDDDD;
-          ul li{
-            height: 30px;
-          }
-          .red i{
-            position: absolute;
-            height: 32px;
+        .bestSell{
+          float: left;
+          width: 230px;
+          padding: 0 10px;
+          .hostTitle{
             line-height: 32px;
-            font-size: 14px;
-            font-family: 'Microsoft YaHei';
-            font-style: normal;
-            width: 40px;
-            text-align: center;
-            top: 0;
-            color: #e60000;
+            height: 32px;
+            overflow: hidden;
+            background: #fff;
+            h2{
+              float: left;
+              font-size: 16px;
+              color: #e60000;
+              font-family: "Microsoft YaHei";
+              font-weight: 400;
+            }
+            p{
+              float: right;
+              color: #999999
+            }
           }
-          li{
-            position: relative;
-            border-bottom: 1px solid #eaeaea;
-            i{
+          .hostType{
+            border: 1px solid #DDDDDD;
+            ul li{
+              height: 30px;
+            }
+            .red i{
               position: absolute;
               height: 32px;
               line-height: 32px;
@@ -255,35 +248,230 @@
               width: 40px;
               text-align: center;
               top: 0;
+              color: #e60000;
             }
-            em{
-              position: absolute;
-              font-size: 9px;
-              color: #7a7a7a;
-              height: 32px;
-              line-height: 32px;
-              right: 10px;
-              top: 0;
-            }
-            p{
-              height: 34px;
-              line-height: 34px;
-              color: #333333;
-              text-indent: 44px;
-              padding-right: 35px;
-              overflow: hidden;
-              cursor: pointer;
+            li{
+              position: relative;
+              border-bottom: 1px solid #eaeaea;
+              i{
+                position: absolute;
+                height: 32px;
+                line-height: 32px;
+                font-size: 14px;
+                font-family: 'Microsoft YaHei';
+                font-style: normal;
+                width: 40px;
+                text-align: center;
+                top: 0;
+              }
+              em{
+                position: absolute;
+                font-size: 9px;
+                color: #7a7a7a;
+                height: 32px;
+                line-height: 32px;
+                right: 10px;
+                top: 0;
+              }
+              p{
+                height: 34px;
+                line-height: 34px;
+                color: #333333;
+                text-indent: 44px;
+                padding-right: 35px;
+                overflow: hidden;
+                cursor: pointer;
+              }
             }
           }
         }
-      }
 
+      }
     }
   }
-  .advertisement{
+  .advertisements{
     margin-top: 510px;
-    padding: 0px 100px ;
+    .advertisement{
+      width: 1200px;
+      margin: auto;
+    }
   }
+  .taoShu{
+    .taoShuHotSellers{
+      width:1200px;
+      margin: auto;
+      height: 385px;
+      .taoShuHotSeller{
+        height: 60px;
+        border-bottom: 3px solid #e60000;
+        h2{
+          text-align: left;
+          float: left;
+          height: 58px;
+          line-height: 55px;
+          font-family: "Microsoft YaHei";
+          font-style: oblique;
+          font-weight: normal;
+          a{
+            color: #e60000;
+            text-decoration: none;
+            overflow: hidden;
+            font-size: 22px;
+            float: left;
+          }
+          span{
+            color: #333333;
+            margin-left: 10px;
+            font-size: 18px;
+            font-style: oblique;
+          }
+        }
+        a{
+          font-size: 14px;
+          line-height: 58px;
+          color: #666666;
+          float: right;
+        }
+      }
+      .bookType{
+        position: relative;
+        height: 300px;
+        overflow: hidden;
+        margin-top: 14px;
+        ul{
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        ul li{
+          float: left;
+          width: 285px;
+          border: 1px solid #e6e6e6;
+          margin-right: 15px;
+          overflow: hidden;
+          background: #edf8ff;
+          height: 297px;
+        }
+        .bookCover{
+          height: 190px;
+          img{
+            width: 100%;
+          }
+        }
+        .bookName{
+          margin-top: 7px;
+          line-height: 22px;
+          height: 66px;
+          overflow: hidden;
+          overflow: hidden;
+          padding: 0 14px;
+          a{
+            color: #333333;
+            text-decoration: none
+          }
+        }
+        .priceWrap{
+          margin-top: 3px;
+          padding: 0 14px;
+          overflow: hidden;
+          line-height: 24px;
+          font-family: 'Microsoft YaHei';
+          .salePrice{
+            float: left;
+            color: #e60000;
+            font-size: 20px;
+            b{
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+            }
+            i{
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+            }
+          }
+          //.salePrice b {
+          //  font-size: 14px;
+          //  font-weight: 400;
+          //  font-style: normal;
+          //}
+          .price{
+            float: left;
+            margin-left: 13px;
+            color: #999;
+            line-height: 28px;
+          }
+          .discount{
+            float: right;
+            background: #5bd7ff;
+            color: #fff;
+            line-height: 16px;
+            height: 16px;
+            padding: 0 5px;
+            border-radius: 3px;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  /*文学图书*/
+  .literatureBook{
+    margin-top: 20px;
+    .w1200{
+      width: 1200px;
+      height: 1200px;
+      margin: auto;
+      .bookTitle{
+        position: relative;
+        background: #f5f5f5;
+        height: 55px;
+        h2{
+          float: left;
+          height: 55px;
+          width: 210px;
+          line-height: 55px;
+          text-indent: 16px;
+          background: #00b6f0;
+          a{
+            display: block;
+            height: 55px;
+            text-decoration: none;
+            font-size: 22px;
+            color: #fff;
+            font-family: "黑体";
+          }
+        }
+        ul{
+          overflow: hidden;
+          float: left;
+
+        }
+        ul li{
+          height: 55px;
+          float: left;
+          padding: 0 19px;
+          a :hover{
+            color: #03a7db;
+          }
+          a{
+            padding: 0 7px;
+            padding-top: 0px;
+            padding-top: 8px;
+            font-size: 15px;
+            color: #333333;
+            display: block;
+            line-height: 32px;
+            height: 43px;
+          }
+
+        }
+      }
+    }
+  }
+
 
 
 
