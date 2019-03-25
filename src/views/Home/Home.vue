@@ -993,9 +993,9 @@ flex-direction: row;flex-wrap: wrap">
     <!--专题广告-->
     <div class="advertisements">
       <div class="advertisement">
-        <img src="http://image31.bookschina.com/pro-images/sbanner/sbanner_277.jpg" alt="新品折上折">
-        <img src="http://image31.bookschina.com/pro-images/sbanner/sbanner_278.jpg" alt="豆瓣冷门好书">
-        <img src="http://image31.bookschina.com/pro-images/sbanner/sbanner_279.jpg" alt="甲老版书">
+        <img src="http://image31.bookschina.com/pro-images/sbanner/sbanner_277.jpg">
+        <img src="http://image31.bookschina.com/pro-images/sbanner/sbanner_278.jpg">
+        <img src="http://image31.bookschina.com/pro-images/sbanner/sbanner_279.jpg">
       </div>
     </div>
     <!--淘书团热销-->
@@ -1087,27 +1087,2601 @@ flex-direction: row;flex-wrap: wrap">
       <div class="w1200">
         <div class="bookTitle">
           <h2><a>文学图书 &gt;</a></h2>
-          <ul>
-            <li><a>小说</a></li>
-            <li><a>诗歌散文</a></li>
-            <li><a>悬疑推理</a></li>
-            <li><a>青春文学</a></li>
-          </ul>
+          <Menu mode="horizontal" active-name="1" @on-select="detailsShow">
+            <MenuItem name="1">
+              小说
+            </MenuItem>
+            <MenuItem name="2">
+              诗歌散文
+            </MenuItem>
+            <MenuItem name="3">
+              悬疑推理
+            </MenuItem>
+            <MenuItem name="4">
+              青春文学
+            </MenuItem>
+          </Menu>
+          <!--<ul>-->
+            <!--<li><a href="#" @click="novel">小说</a></li>-->
+            <!--<li><a @click="literature">诗歌散文</a></li>-->
+            <!--<li><a @click="reasoning">悬疑推理</a></li>-->
+            <!--<li><a @click="youth">青春文学</a></li>-->
+          <!--</ul>-->
 
+        </div>
+        <div class="bookContent">
+          <div class="bookLeft">
+            <div class="leftImg">
+              <div class="imgTop">
+                <a><img src="http://image31.bookschina.com/pro-images/sbanner/sbanner_274.jpg" alt="浮世杂绘-小人物系列杂文"></a>
+              </div>
+              <!--小说排行榜-->
+              <div class="imgText" v-show="novelShow">
+                <h3 class="kindTextTit">小说排行榜</h3>
+                <ul>
+                  <li>
+                    <a title="羊脂球-莫泊桑短篇小说精选">羊脂球-莫泊桑短篇小说精选</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a title="黑铁时代">黑铁时代</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a title="最后一个大西洲人">最后一个大西洲人</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a title="隐形圈">隐形圈</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a title="绞河镇的最后一夜">绞河镇的最后一夜</a>
+                    <span>&gt;</span>
+                  </li>
+                </ul>
+              </div>
+              <!--文学排行榜-->
+              <div class="imgText" v-show="literatureShow">
+                <h3 class="kindTextTit">文学排行榜</h3>
+                <ul>
+                  <li>
+                    <a>城南旧事-签名手稿典藏版</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>红楼艺术</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>食事-汪曾祺精选集</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>宋家客厅-从钱锺书到张爱玲</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>莫砺锋评说白居易</a>
+                    <span>&gt;</span>
+                  </li>
+                </ul>
+              </div>
+              <!--悬疑推理排行榜-->
+              <div class="imgText" v-show="reasoningShow">
+                <h3 class="kindTextTit">悬疑推理排行榜</h3>
+                <ul>
+                  <li>
+                    <a>一个背叛日本的日本人</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>不可能犯罪诊断书-V</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>隐形圈</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>圣恶女</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>写乐杀人事件</a>
+                    <span>&gt;</span>
+                  </li>
+                </ul>
+              </div>
+              <!--青春文学-->
+              <div class="imgText" v-show="youthShow">
+                <h3 class="kindTextTit">青春文学排行榜</h3>
+                <ul>
+                  <li>
+                    <a>你若向阳,心不忧伤</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>长篇小说:饕餮记3</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>催枪问谁-剑侠情缘叁-壹</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>沉颜传奇(全两册)</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>云养汉</a>
+                    <span>&gt;</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--小说-->
+            <div class="bookDetails" v-show="novelShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image12.bookschina.com/2013/20130309/s5757855.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>天空的囚徒</a>
+                  </h3>
+                  <p class="bookAuthor">[西班牙]卡洛斯·鲁依斯·萨丰</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥13.3</span>
+                    <span class="price">¥29.0</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image30.bookschina.com/1/1.11/s1042729.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>牟氏庄园</a>
+                  </h3>
+                  <p class="bookAuthor">衣向东</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2009/20090121/s3208464.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>澜本嫁衣</a>
+                  </h3>
+                  <p class="bookAuthor">七堇年 著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2018/zuo/6/s3646281.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>明治开化安吾捕物帖(上)</a>
+                  </h3>
+                  <p class="bookAuthor">[日]坂口安吾著,杨明绮 译</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image12.bookschina.com/2013/20131119/s5844293.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>我的邻居张爱玲</a>
+                  </h3>
+                  <p class="bookAuthor">戴文采  著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2018/zuo/6/s7481557.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>灰故事-楚尘文化</a>
+                  </h3>
+                  <p class="bookAuthor">阿乙 著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20110122/s5009512.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>现代派文学辞典</a>
+                  </h3>
+                  <p class="bookAuthor">贾勤</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20110211/s5026393.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>风语-2/茅盾文学奖得主麦家力作</a>
+                  </h3>
+                  <p class="bookAuthor">麦家 著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--诗歌散文-->
+            <div class="bookDetails" v-show="literatureShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--悬疑推理-->
+            <div class="bookDetails" v-show="reasoningShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--青春文学-->
+            <div class="bookDetails" v-show="youthShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="bookRight">
+            <ul>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+            </ul>
+            <div class="rightImg">
+              <a><img src="http://image31.bookschina.com/pro-images/congshuxin/58336_ad190.jpg"></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!--社科图书-->
+    <div class="socialBook">
+      <div class="w1200">
+        <div class="bookTitle">
+          <h2><a>社科图书 &gt;</a></h2>
+          <Menu mode="horizontal" active-name="5" @on-select="socialShow">
+            <MenuItem name="5">
+              历史
+            </MenuItem>
+            <MenuItem name="6">
+              传记
+            </MenuItem>
+            <MenuItem name="7">
+              哲学宗教
+            </MenuItem>
+            <MenuItem name="8">
+              政治军事
+            </MenuItem>
+          </Menu>
+          <!--<ul>-->
+          <!--<li><a href="#" @click="novel">小说</a></li>-->
+          <!--<li><a @click="literature">诗歌散文</a></li>-->
+          <!--<li><a @click="reasoning">悬疑推理</a></li>-->
+          <!--<li><a @click="youth">青春文学</a></li>-->
+          <!--</ul>-->
+
+        </div>
+        <div class="bookContent">
+          <div class="bookLeft">
+            <div class="leftImg">
+              <div class="imgTop">
+                <a><img src="http://image31.bookschina.com/pro-images/sbanner/sbanner_273.jpg" alt="浮世杂绘-小人物系列杂文"></a>
+              </div>
+              <!--历史畅销榜-->
+              <div class="imgText" v-show="historyShow">
+                <h3 class="kindTextTit">历史畅销榜</h3>
+                <ul>
+                  <li>
+                    <a title="羊脂球-莫泊桑短篇小说精选">羊脂球-莫泊桑短篇小说精选</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a title="黑铁时代">黑铁时代</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a title="最后一个大西洲人">最后一个大西洲人</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a title="隐形圈">隐形圈</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a title="绞河镇的最后一夜">绞河镇的最后一夜</a>
+                    <span>&gt;</span>
+                  </li>
+                </ul>
+              </div>
+              <!--传记排行榜-->
+              <div class="imgText" v-show="biographyShow">
+                <h3 class="kindTextTit">传记排行榜</h3>
+                <ul>
+                  <li>
+                    <a>城南旧事-签名手稿典藏版</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>红楼艺术</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>食事-汪曾祺精选集</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>宋家客厅-从钱锺书到张爱玲</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>莫砺锋评说白居易</a>
+                    <span>&gt;</span>
+                  </li>
+                </ul>
+              </div>
+              <!--哲学宗教畅销榜-->
+              <div class="imgText" v-show="religionShow">
+                <h3 class="kindTextTit">哲学宗教畅销榜</h3>
+                <ul>
+                  <li>
+                    <a>一个背叛日本的日本人</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>不可能犯罪诊断书-V</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>隐形圈</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>圣恶女</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>写乐杀人事件</a>
+                    <span>&gt;</span>
+                  </li>
+                </ul>
+              </div>
+              <!--政治军事畅销榜-->
+              <div class="imgText" v-show="politicsShow">
+                <h3 class="kindTextTit">政治军事畅销榜</h3>
+                <ul>
+                  <li>
+                    <a>你若向阳,心不忧伤</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>长篇小说:饕餮记3</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>催枪问谁-剑侠情缘叁-壹</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>沉颜传奇(全两册)</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>云养汉</a>
+                    <span>&gt;</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--历史畅销榜-->
+            <div class="bookDetails" v-show="historyShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image12.bookschina.com/2013/20130309/s5757855.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>天空的囚徒</a>
+                  </h3>
+                  <p class="bookAuthor">[西班牙]卡洛斯·鲁依斯·萨丰</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥13.3</span>
+                    <span class="price">¥29.0</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image30.bookschina.com/1/1.11/s1042729.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>牟氏庄园</a>
+                  </h3>
+                  <p class="bookAuthor">衣向东</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2009/20090121/s3208464.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>澜本嫁衣</a>
+                  </h3>
+                  <p class="bookAuthor">七堇年 著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2018/zuo/6/s3646281.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>明治开化安吾捕物帖(上)</a>
+                  </h3>
+                  <p class="bookAuthor">[日]坂口安吾著,杨明绮 译</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image12.bookschina.com/2013/20131119/s5844293.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>我的邻居张爱玲</a>
+                  </h3>
+                  <p class="bookAuthor">戴文采  著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2018/zuo/6/s7481557.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>灰故事-楚尘文化</a>
+                  </h3>
+                  <p class="bookAuthor">阿乙 著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20110122/s5009512.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>现代派文学辞典</a>
+                  </h3>
+                  <p class="bookAuthor">贾勤</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20110211/s5026393.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>风语-2/茅盾文学奖得主麦家力作</a>
+                  </h3>
+                  <p class="bookAuthor">麦家 著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--传记排行榜-->
+            <div class="bookDetails" v-show="biographyShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--哲学宗教畅销榜-->
+            <div class="bookDetails" v-show="religionShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--政治军事畅销榜-->
+            <div class="bookDetails" v-show="politicsShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="bookRight">
+            <ul>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+            </ul>
+            <div class="rightImg">
+              <a><img src="http://image31.bookschina.com/pro-images/congshuxin/6497952_ad190.jpg"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--少儿图书-->
+    <div class="childrenBook">
+      <div class="w1200">
+        <div class="bookTitle">
+          <h2><a>少儿图书 &gt;</a></h2>
+          <Menu mode="horizontal" active-name="9" @on-select="childrenShow">
+            <MenuItem name="9">
+              益智启蒙
+            </MenuItem>
+            <MenuItem name="10">
+              儿童文学
+            </MenuItem>
+            <MenuItem name="11">
+              精品绘本
+            </MenuItem>
+          </Menu>
+        </div>
+        <div class="bookContent">
+          <div class="bookLeft">
+            <div class="leftImg">
+              <div class="imgTop">
+                <a><img src="http://image31.bookschina.com/pro-images/sbanner/sbanner_272.jpg"></a>
+              </div>
+              <!--益智启蒙-->
+              <div class="imgText" v-show="alpiniaShow">
+                <h3 class="kindTextTit">益智启蒙</h3>
+                <ul>
+                  <li>
+                    <a title="羊脂球-莫泊桑短篇小说精选">羊脂球-莫泊桑短篇小说精选</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a title="黑铁时代">黑铁时代</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a title="最后一个大西洲人">最后一个大西洲人</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a title="隐形圈">隐形圈</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a title="绞河镇的最后一夜">绞河镇的最后一夜</a>
+                    <span>&gt;</span>
+                  </li>
+                </ul>
+              </div>
+              <!--儿童文学畅销榜-->
+              <div class="imgText" v-show="childrenBookShow">
+                <h3 class="kindTextTit">儿童文学畅销榜</h3>
+                <ul>
+                  <li>
+                    <a>城南旧事-签名手稿典藏版</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>红楼艺术</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>食事-汪曾祺精选集</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>宋家客厅-从钱锺书到张爱玲</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>莫砺锋评说白居易</a>
+                    <span>&gt;</span>
+                  </li>
+                </ul>
+              </div>
+              <!--绘本畅销本-->
+              <div class="imgText" v-show="pictureShow">
+                <h3 class="kindTextTit">绘本畅销本</h3>
+                <ul>
+                  <li>
+                    <a>一个背叛日本的日本人</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>不可能犯罪诊断书-V</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>隐形圈</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>圣恶女</a>
+                    <span>&gt;</span>
+                  </li>
+                  <li>
+                    <a>写乐杀人事件</a>
+                    <span>&gt;</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--小说-->
+            <div class="bookDetails" v-show="alpiniaShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image12.bookschina.com/2013/20130309/s5757855.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>天空的囚徒</a>
+                  </h3>
+                  <p class="bookAuthor">[西班牙]卡洛斯·鲁依斯·萨丰</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥13.3</span>
+                    <span class="price">¥29.0</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image30.bookschina.com/1/1.11/s1042729.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>牟氏庄园</a>
+                  </h3>
+                  <p class="bookAuthor">衣向东</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2009/20090121/s3208464.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>澜本嫁衣</a>
+                  </h3>
+                  <p class="bookAuthor">七堇年 著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2018/zuo/6/s3646281.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>明治开化安吾捕物帖(上)</a>
+                  </h3>
+                  <p class="bookAuthor">[日]坂口安吾著,杨明绮 译</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image12.bookschina.com/2013/20131119/s5844293.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>我的邻居张爱玲</a>
+                  </h3>
+                  <p class="bookAuthor">戴文采  著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2018/zuo/6/s7481557.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>灰故事-楚尘文化</a>
+                  </h3>
+                  <p class="bookAuthor">阿乙 著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20110122/s5009512.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>现代派文学辞典</a>
+                  </h3>
+                  <p class="bookAuthor">贾勤</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20110211/s5026393.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>风语-2/茅盾文学奖得主麦家力作</a>
+                  </h3>
+                  <p class="bookAuthor">麦家 著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--诗歌散文-->
+            <div class="bookDetails" v-show="childrenBookShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--悬疑推理-->
+            <div class="bookDetails" v-show="pictureShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--青春文学-->
+            <div class="bookDetails" v-show="youthShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111019/s5306995.jpg"></a>
+                  </div>
+                  <h3 class="detailsName">
+                    <a>宅十三-山口山-第一部</a>
+                  </h3>
+                  <p class="bookAuthor">有时右逝 等著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">¥8.9</span>
+                    <span class="price">¥29.8</span>
+                  </div>
+                  <div class="icon">
+                    <img src="http://image31.bookschina.com/pro-images/190320cc/tubiao45.png" alt="12万种图书|每满10减3">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bookRight">
+            <ul>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+            </ul>
+            <div class="rightImg">
+              <a><img src="http://image31.bookschina.com/pro-images/congshuxin/60511_ad230.jpg"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--其他分类图书楼层-->
+    <div class="otherBook">
+      <div class="w1200">
+        <div class="otherContent">
+          <div class="contentTop">
+            <Menu mode="horizontal" active-name="12" @on-select="otherShow">
+              <MenuItem name="12">
+                艺术
+              </MenuItem>
+              <MenuItem name="13">
+                美食
+              </MenuItem>
+              <MenuItem name="14">
+                旅游
+              </MenuItem>
+              <MenuItem name="15">
+                保健
+              </MenuItem>
+              <MenuItem name="16">
+                孕产/育儿
+              </MenuItem>
+              <MenuItem name="17">
+                外语
+              </MenuItem>
+              <MenuItem name="18">
+                辅导
+              </MenuItem>
+            </Menu>
+          </div>
+          <!--艺术类-->
+          <div class="contentLeft" v-show="artShow">
+            <ul>
+              <li>
+                <div class="bookImg">
+                  <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                </div>
+                <h3 class="bookName">
+                  <a>弗拉哈迪纪录电影研究</a>
+                </h3>
+                <p class="bookAuthor">[英]保罗·罗沙</p>
+                <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+              </li>
+              <li>
+                <div class="bookImg">
+                  <a><img src="http://image31.bookschina.com/2005/051115/s1152501.jpg"></a>
+                </div>
+                <h3 class="bookName">
+                  <a>秋山孝海报作品集</a>
+                </h3>
+                <p class="bookAuthor">[日]秋山孝 著</p>
+                <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+              </li>
+              <li>
+                <div class="bookImg">
+                  <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                </div>
+                <h3 class="bookName">
+                  <a>弗拉哈迪纪录电影研究</a>
+                </h3>
+                <p class="bookAuthor">[英]保罗·罗沙</p>
+                <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+              </li>
+              <li>
+                <div class="bookImg">
+                  <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                </div>
+                <h3 class="bookName">
+                  <a>弗拉哈迪纪录电影研究</a>
+                </h3>
+                <p class="bookAuthor">[英]保罗·罗沙</p>
+                <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+              </li>
+              <li>
+                <div class="bookImg">
+                  <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                </div>
+                <h3 class="bookName">
+                  <a>弗拉哈迪纪录电影研究</a>
+                </h3>
+                <p class="bookAuthor">[英]保罗·罗沙</p>
+                <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+              </li>
+            </ul>
+          </div>
+          <!--美食-->
+          <div class="contentLeft" v-show="foodShow">
+            <ul>
+              <li>
+                <div class="bookImg">
+                  <a><img src="http://image12.bookschina.com/2012/20120713/s5565049.jpg"></a>
+                </div>
+                <h3 class="bookName">
+                  <a>舌尖上的中国/引发央视收视狂潮</a>
+                </h3>
+                <p class="bookAuthor">中央电视台纪录频道-编</p>
+                <div class="pirceWrap">
+                  <span class="salePrice">￥20.3</span>
+                  <span class="price">￥45.0</span>
+                </div>
+              </li>
+              <li>
+                <div class="bookImg">
+                  <a><img src="http://image31.bookschina.com/2005/051115/s1152501.jpg"></a>
+                </div>
+                <h3 class="bookName">
+                  <a>秋山孝海报作品集</a>
+                </h3>
+                <p class="bookAuthor">[日]秋山孝 著</p>
+                <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+              </li>
+              <li>
+                <div class="bookImg">
+                  <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                </div>
+                <h3 class="bookName">
+                  <a>弗拉哈迪纪录电影研究</a>
+                </h3>
+                <p class="bookAuthor">[英]保罗·罗沙</p>
+                <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+              </li>
+              <li>
+                <div class="bookImg">
+                  <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                </div>
+                <h3 class="bookName">
+                  <a>弗拉哈迪纪录电影研究</a>
+                </h3>
+                <p class="bookAuthor">[英]保罗·罗沙</p>
+                <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+              </li>
+              <li>
+                <div class="bookImg">
+                  <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                </div>
+                <h3 class="bookName">
+                  <a>弗拉哈迪纪录电影研究</a>
+                </h3>
+                <p class="bookAuthor">[英]保罗·罗沙</p>
+                <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+              </li>
+            </ul>
+          </div>
+          <!--旅游-->
+          <div class="contentLeft" v-show="tourismShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image12.bookschina.com/2013/20130309/s5776417.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>河上漂流记-十九世纪的旅行</a>
+                  </h3>
+                  <p class="bookAuthor">[美]约翰·巴勒斯 著,马永波/石蕾 译</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2005/051115/s1152501.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>秋山孝海报作品集</a>
+                  </h3>
+                  <p class="bookAuthor">[日]秋山孝 著</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>弗拉哈迪纪录电影研究</a>
+                  </h3>
+                  <p class="bookAuthor">[英]保罗·罗沙</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>弗拉哈迪纪录电影研究</a>
+                  </h3>
+                  <p class="bookAuthor">[英]保罗·罗沙</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>弗拉哈迪纪录电影研究</a>
+                  </h3>
+                  <p class="bookAuthor">[英]保罗·罗沙</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+              </ul>
+            </div>
+          <!--保健-->
+          <div class="contentLeft" v-show="healthShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20110124/s4952415.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>看三国说中医</a>
+                  </h3>
+                  <p class="bookAuthor">胡献国</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2005/051115/s1152501.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>秋山孝海报作品集</a>
+                  </h3>
+                  <p class="bookAuthor">[日]秋山孝 著</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>弗拉哈迪纪录电影研究</a>
+                  </h3>
+                  <p class="bookAuthor">[英]保罗·罗沙</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>弗拉哈迪纪录电影研究</a>
+                  </h3>
+                  <p class="bookAuthor">[英]保罗·罗沙</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>弗拉哈迪纪录电影研究</a>
+                  </h3>
+                  <p class="bookAuthor">[英]保罗·罗沙</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+              </ul>
+            </div>
+          <!--孕产/育儿-->
+          <div class="contentLeft" v-show="maternityShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2011/20111203/s5312376.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>顺产是件美丽的事-俏妈咪的顺产经</a>
+                  </h3>
+                  <p class="bookAuthor">凯特猫斯基 著,张艳琴 审读</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">￥20.3</span>
+                    <span class="price">￥45.0</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2005/051115/s1152501.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>秋山孝海报作品集</a>
+                  </h3>
+                  <p class="bookAuthor">[日]秋山孝 著</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>弗拉哈迪纪录电影研究</a>
+                  </h3>
+                  <p class="bookAuthor">[英]保罗·罗沙</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>弗拉哈迪纪录电影研究</a>
+                  </h3>
+                  <p class="bookAuthor">[英]保罗·罗沙</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>弗拉哈迪纪录电影研究</a>
+                  </h3>
+                  <p class="bookAuthor">[英]保罗·罗沙</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+              </ul>
+            </div>
+          <!--外语-->
+          <div class="contentLeft" v-show="foreignShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image12.bookschina.com/2013/20131101/s6367881.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>在普林斯顿大学听演讲-超值馋馈赠380分钟MP3光盘一张</a>
+                  </h3>
+                  <p class="bookAuthor">江涛 主编</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">￥20.3</span>
+                    <span class="price">￥45.0</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2005/051115/s1152501.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>秋山孝海报作品集</a>
+                  </h3>
+                  <p class="bookAuthor">[日]秋山孝 著</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>弗拉哈迪纪录电影研究</a>
+                  </h3>
+                  <p class="bookAuthor">[英]保罗·罗沙</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>弗拉哈迪纪录电影研究</a>
+                  </h3>
+                  <p class="bookAuthor">[英]保罗·罗沙</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>弗拉哈迪纪录电影研究</a>
+                  </h3>
+                  <p class="bookAuthor">[英]保罗·罗沙</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+              </ul>
+          </div>
+          <!--辅导-->
+          <div class="contentLeft" v-show="coachShow">
+              <ul>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image30.bookschina.com/2/2.10/s522126.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>谈美书简——语文新课标必读丛书</a>
+                  </h3>
+                  <p class="bookAuthor">朱光潜 著</p>
+                  <div class="pirceWrap">
+                    <span class="salePrice">￥20.3</span>
+                    <span class="price">￥45.0</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2005/051115/s1152501.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>秋山孝海报作品集</a>
+                  </h3>
+                  <p class="bookAuthor">[日]秋山孝 著</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>弗拉哈迪纪录电影研究</a>
+                  </h3>
+                  <p class="bookAuthor">[英]保罗·罗沙</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>弗拉哈迪纪录电影研究</a>
+                  </h3>
+                  <p class="bookAuthor">[英]保罗·罗沙</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+                <li>
+                  <div class="bookImg">
+                    <a><img src="http://image31.bookschina.com/2007/20070114/s1921156.jpg"></a>
+                  </div>
+                  <h3 class="bookName">
+                    <a>弗拉哈迪纪录电影研究</a>
+                  </h3>
+                  <p class="bookAuthor">[英]保罗·罗沙</p>
+                  <div class="pirceWrap"><span class="salePrice">￥20.3</span><span class="price">￥45.0</span></div>
+                </li>
+              </ul>
+            </div>
+          <div class="contentRight">
+            <ul>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+              <li>
+                <a class="text">经典印象·小说名作坊</a>
+                <span>&gt;</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <foot-nav/>
   </div>
 </template>
-//123
 <script>
 import navBar from '../../components/navBar/navBar'
+import footNav from '../../components/footNav/footBav'
 export default {
   components: {
-    navBar
+    navBar,
+    footNav
   },
   data () {
     return {
+      novelShow: true,
+      literatureShow: false,
+      reasoningShow: false,
+      youthShow: false,
+
+      historyShow: true,
+      biographyShow: false,
+      religionShow: false,
+      politicsShow: false,
+
+      alpiniaShow: true,
+      childrenBookShow: false,
+      pictureShow: false,
+
+      artShow: true,
+      foodShow: false,
+      tourismShow: false,
+      healthShow: false,
+      maternityShow: false,
+      foreignShow: false,
+      coachShow: false,
       value1: 1,
       listData: [{
         'title': '无缝滚动第一行无缝滚动第一行',
@@ -1127,15 +3701,6 @@ export default {
       }, {
         'title': '无缝滚动第六行无缝滚动第六行',
         'date': '2017-12-16'
-      }, {
-        'title': '无缝滚动第七行无缝滚动第七行',
-        'date': '2017-12-16'
-      }, {
-        'title': '无缝滚动第八行无缝滚动第八行',
-        'date': '2017-12-16'
-      }, {
-        'title': '无缝滚动第九行无缝滚动第九行',
-        'date': '2017-12-16'
       }]
     }
   },
@@ -1148,6 +3713,128 @@ export default {
         // direction: 2, // （左右的）
         step: 1, // （调整速度的）0
         hoverStop: true // (鼠标停留停止 离开继续运行（反之则停止）)
+      }
+    }
+  },
+  methods: {
+    detailsShow: function (name) {
+      if (name === '1') {
+        this.novelShow = true
+        this.literatureShow = false
+        this.reasoningShow = false
+        this.youthShow = false
+      } else if (name === '2') {
+        this.novelShow = false
+        this.literatureShow = true
+        this.reasoningShow = false
+        this.youthShow = false
+      } else if (name === '3') {
+        this.novelShow = false
+        this.literatureShow = false
+        this.reasoningShow = true
+        this.youthShow = false
+      } else if (name === '4') {
+        this.novelShow = false
+        this.literatureShow = false
+        this.reasoningShow = false
+        this.youthShow = true
+      }
+    },
+    socialShow: function (name) {
+      if (name === '5') {
+        this.historyShow = true
+        this.biographyShow = false
+        this.religionShow = false
+        this.politicsShow = false
+      } else if (name === '6') {
+        this.historyShow = false
+        this.biographyShow = true
+        this.religionShow = false
+        this.politicsShow = false
+      } else if (name === '7') {
+        this.historyShow = false
+        this.biographyShow = false
+        this.religionShow = true
+        this.politicsShow = false
+      } else if (name === '8') {
+        this.historyShow = false
+        this.biographyShow = false
+        this.religionShow = false
+        this.politicsShow = true
+      }
+    },
+    childrenShow: function (name) {
+      if (name === '9') {
+        this.alpiniaShow = true
+        this.childrenBookShow = false
+        this.pictureShow = false
+      } else if (name === '10') {
+        this.alpiniaShow = false
+        this.childrenBookShow = true
+        this.pictureShow = false
+      } else if (name === '11') {
+        this.alpiniaShow = false
+        this.childrenBookShow = false
+        this.pictureShow = true
+      }
+    },
+    otherShow: function (name) {
+      if (name === '12') {
+        this.artShow = true
+        this.foodShow = false
+        this.tourismShow = false
+        this.healthShow = false
+        this.maternityShow = false
+        this.foreignShow = false
+        this.coachShow = false
+      } else if (name === '13') {
+        this.artShow = false
+        this.foodShow = true
+        this.tourismShow = false
+        this.healthShow = false
+        this.maternityShow = false
+        this.foreignShow = false
+        this.coachShow = false
+      } else if (name === '14') {
+        this.artShow = false
+        this.foodShow = false
+        this.tourismShow = true
+        this.healthShow = false
+        this.maternityShow = false
+        this.foreignShow = false
+        this.coachShow = false
+      } else if (name === '15') {
+        this.artShow = false
+        this.foodShow = false
+        this.tourismShow = false
+        this.healthShow = true
+        this.maternityShow = false
+        this.foreignShow = false
+        this.coachShow = false
+      } else if (name === '16') {
+        this.artShow = false
+        this.foodShow = false
+        this.tourismShow = false
+        this.healthShow = false
+        this.maternityShow = true
+        this.foreignShow = false
+        this.coachShow = false
+      } else if (name === '17') {
+        this.artShow = false
+        this.foodShow = false
+        this.tourismShow = false
+        this.healthShow = false
+        this.maternityShow = false
+        this.foreignShow = true
+        this.coachShow = false
+      } else if (name === '18') {
+        this.artShow = false
+        this.foodShow = false
+        this.tourismShow = false
+        this.healthShow = false
+        this.maternityShow = false
+        this.foreignShow = false
+        this.coachShow = true
       }
     }
   }

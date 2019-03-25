@@ -26,6 +26,7 @@ module.exports = {
     // 禁止空格和 tab 的混合缩进
     'no-mixed-spaces-and-tabs': 0,
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+   "vue/no-parsing-error": [2, { "x-invalid-end-tag": false }]
   }
 }
