@@ -7,9 +7,9 @@
           </div>
           <div class="nav-right">
             <ul style="height: 40px">
-              <li>首页</li>
-              <li>淘书团</li>
-              <li>畅销榜</li>
+              <li><router-link :to="{path: '/'}">首页</router-link></li>
+              <li><router-link :to="{path: '/washBook'}">淘书团</router-link></li>
+              <li><router-link :to="{path: '/bestSell'}">畅销榜</router-link></li>
               <li>五星书</li>
               <li>新上架</li>
               <li>9块9包邮</li>

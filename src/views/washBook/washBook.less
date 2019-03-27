@@ -1,0 +1,156 @@
+.washBook{
+  .w1200{
+    width: 1200px;
+    margin: auto;
+  }
+  .classBar{
+    background: #e70b1c ;
+    .contentBar{
+      ul{
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+      }
+      a{
+        color: #ffffff;
+      }
+      li{
+        display: inline;
+        list-style: none;
+        margin: 0px 50px 0px 18px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    }
+  }
+  .pageContent{
+    background: #e8e8e8;
+    height: 2060px;
+    .selector{
+      padding-top: 10px;
+      height: 150px;
+      .selectorInner{
+        height: 150px;
+        width: 1200px;
+        overflow: hidden;
+        margin: auto;
+        background: #ffffff;
+        .guide_box{
+          border-bottom: 1px solid #e8e8e8;
+          padding: 0 26px 0 114px;
+          position: relative;
+          .guide_title{
+            height: 40px;
+            line-height: 40px;
+            width: 88px;
+            position: absolute;
+            left: 26px;
+            top: 0;
+            strong{
+              color: #666;
+              font-weight: 600;
+              font-size: 14px;
+              font-family: "Microsoft YaHei";
+            }
+          }
+          .guide_content{
+            ul{
+              overflow: hidden;
+              padding: 6px 0;
+              li{
+                float: left;
+                line-height: 28px;
+                display: inline;
+                margin: 0 37px 0 0;
+                font-family: "Microsoft YaHei";
+              }
+            }
+          }
+        }
+      }
+    }
+    .bookList{
+      position: relative;
+      .bookListInner{
+        width: 1218px;
+        margin: auto;
+        position: relative;
+        ul{
+          overflow: hidden;
+          li{
+            float: left;
+            display: inline;
+            width: 386px;
+            margin: 15px 8px 0;
+            border: 2px solid #e8e8e8;
+            padding-bottom: 13px;
+            background: #fff;
+            position: relative;
+            a{
+              color: #333;
+              display: block;
+              font-size: 16px;
+              font-family: "Microsoft YaHei";
+            }
+            .bookCover{
+              height: 257px;
+              overflow: hidden;
+              img{
+                width: 100%;
+                height: 257px;
+              }
+            }
+            .bookName{
+              line-height: 24px;
+              height: 73px;
+              margin: 10px 9px 0;
+              word-break: break-all;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 3;
+              overflow: hidden;
+            }
+            .price{
+              margin: 10px 9px 0;
+              padding: 7px 0 0;
+              border-top: 1px solid #f0f0f0;
+              .salePrice{
+                color: #e70b1c;
+                font-size: 26px;
+                margin-right: 20px;
+                font-family: 'Microsoft YaHei';
+              }
+            }
+            .otherInfor{
+              color: #666;
+              height: 35px;
+              line-height: 35px;
+              margin-left: 12px;
+              .dingjia{
+                margin-right: 13px;
+              }
+            }
+            .buyButton{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: #e43c3f;
+              position: absolute;
+              overflow: hidden;
+              right: 7px;
+              bottom: 13px;
+              width: 125px;
+              height: 50px;
+              border-radius: 5px;
+              a{
+                color:#fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
