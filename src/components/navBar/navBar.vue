@@ -6,7 +6,7 @@
             <h2>图书分类</h2>
           </div>
           <div class="nav-right">
-            <ul style="height: 40px">
+            <ul style="height: 35px;float: left">
               <li><router-link :to="{path: '/'}">首页</router-link></li>
               <li><router-link :to="{path: '/washBook'}">淘书团</router-link></li>
               <li><router-link :to="{path: '/bestSell'}">畅销榜</router-link></li>

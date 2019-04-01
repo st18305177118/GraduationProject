@@ -8,7 +8,7 @@
       <div class="classBar">
         <div class="w1200">
           <div class="contentBar">
-            <ul style="height: 40px">
+            <ul style="height: 40px;width: 1200px">
               <li><router-link :to="{path: '/'}">首页</router-link></li>
               <li><router-link :to="{path: '/washBook'}">淘书团</router-link></li>
               <li><router-link :to="{path: '/bestSell'}">畅销榜</router-link></li>
