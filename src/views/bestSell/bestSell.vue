@@ -187,9 +187,381 @@
                 </div>
               </div>
             </div>
+            <div class="listRight">
+              <div class="bookList">
+                <ul>
+                  <li>
+                    <div class="cover">
+                      <a><img src="http://image31.bookschina.com/2019/zuo/3/s1894903.jpg"/></a>
+                    </div>
+                    <div class="information">
+                      <h2 class="name">
+                        <a>中国文化六讲</a>
+                      </h2>
+                      <div class="author">
+                        <a>何兹全 著</a>
+                      </div>
+                      <div class="publisher">
+                        <a>河南人民出版社</a>
+                      </div>
+                      <div class="priceWrap">
+                        <span class="sellPrice">¥9.9</span>
+                        <span class="discount">(8.2折)</span>
+                        <span class="priceTit">定价:</span>
+                        <del class="">¥12.0</del>
+                      </div>
+                      <div class="oparateButton">
+                        <Button  type="error" icon="ios-cart-outline">加入购物车</Button>
+                        <Button class="collectBtns">收藏</Button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cover">
+                      <a><img src="http://image31.bookschina.com/2019/zuo/3/s1894903.jpg"/></a>
+                    </div>
+                    <div class="information">
+                      <h2 class="name">
+                        <a>中国文化六讲</a>
+                      </h2>
+                      <div class="author">
+                        <a>何兹全 著</a>
+                      </div>
+                      <div class="publisher">
+                        <a>河南人民出版社</a>
+                      </div>
+                      <div class="priceWrap">
+                        <span class="sellPrice">¥9.9</span>
+                        <span class="discount">(8.2折)</span>
+                        <span class="priceTit">定价:</span>
+                        <del class="">¥12.0</del>
+                      </div>
+                      <div class="oparateButton">
+                        <Button  type="error" icon="ios-cart-outline">加入购物车</Button>
+                        <Button class="collectBtns">收藏</Button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cover">
+                      <a><img src="http://image31.bookschina.com/2019/zuo/3/s1894903.jpg"/></a>
+                    </div>
+                    <div class="information">
+                      <h2 class="name">
+                        <a>中国文化六讲</a>
+                      </h2>
+                      <div class="author">
+                        <a>何兹全 著</a>
+                      </div>
+                      <div class="publisher">
+                        <a>河南人民出版社</a>
+                      </div>
+                      <div class="priceWrap">
+                        <span class="sellPrice">¥9.9</span>
+                        <span class="discount">(8.2折)</span>
+                        <span class="priceTit">定价:</span>
+                        <del class="">¥12.0</del>
+                      </div>
+                      <div class="oparateButton">
+                        <Button  type="error" icon="ios-cart-outline">加入购物车</Button>
+                        <Button class="collectBtns">收藏</Button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cover">
+                      <a><img src="http://image31.bookschina.com/2019/zuo/3/s1894903.jpg"/></a>
+                    </div>
+                    <div class="information">
+                      <h2 class="name">
+                        <a>中国文化六讲</a>
+                      </h2>
+                      <div class="author">
+                        <a>何兹全 著</a>
+                      </div>
+                      <div class="publisher">
+                        <a>河南人民出版社</a>
+                      </div>
+                      <div class="priceWrap">
+                        <span class="sellPrice">¥9.9</span>
+                        <span class="discount">(8.2折)</span>
+                        <span class="priceTit">定价:</span>
+                        <del class="">¥12.0</del>
+                      </div>
+                      <div class="oparateButton">
+                        <Button  type="error" icon="ios-cart-outline">加入购物车</Button>
+                        <Button class="collectBtns">收藏</Button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cover">
+                      <a><img src="http://image31.bookschina.com/2019/zuo/3/s1894903.jpg"/></a>
+                    </div>
+                    <div class="information">
+                      <h2 class="name">
+                        <a>中国文化六讲</a>
+                      </h2>
+                      <div class="author">
+                        <a>何兹全 著</a>
+                      </div>
+                      <div class="publisher">
+                        <a>河南人民出版社</a>
+                      </div>
+                      <div class="priceWrap">
+                        <span class="sellPrice">¥9.9</span>
+                        <span class="discount">(8.2折)</span>
+                        <span class="priceTit">定价:</span>
+                        <del class="">¥12.0</del>
+                      </div>
+                      <div class="oparateButton">
+                        <Button  type="error" icon="ios-cart-outline">加入购物车</Button>
+                        <Button class="collectBtns">收藏</Button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cover">
+                      <a><img src="http://image31.bookschina.com/2019/zuo/3/s1894903.jpg"/></a>
+                    </div>
+                    <div class="information">
+                      <h2 class="name">
+                        <a>中国文化六讲</a>
+                      </h2>
+                      <div class="author">
+                        <a>何兹全 著</a>
+                      </div>
+                      <div class="publisher">
+                        <a>河南人民出版社</a>
+                      </div>
+                      <div class="priceWrap">
+                        <span class="sellPrice">¥9.9</span>
+                        <span class="discount">(8.2折)</span>
+                        <span class="priceTit">定价:</span>
+                        <del class="">¥12.0</del>
+                      </div>
+                      <div class="oparateButton">
+                        <Button  type="error" icon="ios-cart-outline">加入购物车</Button>
+                        <Button class="collectBtns">收藏</Button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cover">
+                      <a><img src="http://image31.bookschina.com/2019/zuo/3/s1894903.jpg"/></a>
+                    </div>
+                    <div class="information">
+                      <h2 class="name">
+                        <a>中国文化六讲</a>
+                      </h2>
+                      <div class="author">
+                        <a>何兹全 著</a>
+                      </div>
+                      <div class="publisher">
+                        <a>河南人民出版社</a>
+                      </div>
+                      <div class="priceWrap">
+                        <span class="sellPrice">¥9.9</span>
+                        <span class="discount">(8.2折)</span>
+                        <span class="priceTit">定价:</span>
+                        <del class="">¥12.0</del>
+                      </div>
+                      <div class="oparateButton">
+                        <Button  type="error" icon="ios-cart-outline">加入购物车</Button>
+                        <Button class="collectBtns">收藏</Button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cover">
+                      <a><img src="http://image31.bookschina.com/2019/zuo/3/s1894903.jpg"/></a>
+                    </div>
+                    <div class="information">
+                      <h2 class="name">
+                        <a>中国文化六讲</a>
+                      </h2>
+                      <div class="author">
+                        <a>何兹全 著</a>
+                      </div>
+                      <div class="publisher">
+                        <a>河南人民出版社</a>
+                      </div>
+                      <div class="priceWrap">
+                        <span class="sellPrice">¥9.9</span>
+                        <span class="discount">(8.2折)</span>
+                        <span class="priceTit">定价:</span>
+                        <del class="">¥12.0</del>
+                      </div>
+                      <div class="oparateButton">
+                        <Button  type="error" icon="ios-cart-outline">加入购物车</Button>
+                        <Button class="collectBtns">收藏</Button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cover">
+                      <a><img src="http://image31.bookschina.com/2019/zuo/3/s1894903.jpg"/></a>
+                    </div>
+                    <div class="information">
+                      <h2 class="name">
+                        <a>中国文化六讲</a>
+                      </h2>
+                      <div class="author">
+                        <a>何兹全 著</a>
+                      </div>
+                      <div class="publisher">
+                        <a>河南人民出版社</a>
+                      </div>
+                      <div class="priceWrap">
+                        <span class="sellPrice">¥9.9</span>
+                        <span class="discount">(8.2折)</span>
+                        <span class="priceTit">定价:</span>
+                        <del class="">¥12.0</del>
+                      </div>
+                      <div class="oparateButton">
+                        <Button  type="error" icon="ios-cart-outline">加入购物车</Button>
+                        <Button class="collectBtns">收藏</Button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cover">
+                      <a><img src="http://image31.bookschina.com/2019/zuo/3/s1894903.jpg"/></a>
+                    </div>
+                    <div class="information">
+                      <h2 class="name">
+                        <a>中国文化六讲</a>
+                      </h2>
+                      <div class="author">
+                        <a>何兹全 著</a>
+                      </div>
+                      <div class="publisher">
+                        <a>河南人民出版社</a>
+                      </div>
+                      <div class="priceWrap">
+                        <span class="sellPrice">¥9.9</span>
+                        <span class="discount">(8.2折)</span>
+                        <span class="priceTit">定价:</span>
+                        <del class="">¥12.0</del>
+                      </div>
+                      <div class="oparateButton">
+                        <Button  type="error" icon="ios-cart-outline">加入购物车</Button>
+                        <Button class="collectBtns">收藏</Button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cover">
+                      <a><img src="http://image31.bookschina.com/2019/zuo/3/s1894903.jpg"/></a>
+                    </div>
+                    <div class="information">
+                      <h2 class="name">
+                        <a>中国文化六讲</a>
+                      </h2>
+                      <div class="author">
+                        <a>何兹全 著</a>
+                      </div>
+                      <div class="publisher">
+                        <a>河南人民出版社</a>
+                      </div>
+                      <div class="priceWrap">
+                        <span class="sellPrice">¥9.9</span>
+                        <span class="discount">(8.2折)</span>
+                        <span class="priceTit">定价:</span>
+                        <del class="">¥12.0</del>
+                      </div>
+                      <div class="oparateButton">
+                        <Button  type="error" icon="ios-cart-outline">加入购物车</Button>
+                        <Button class="collectBtns">收藏</Button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cover">
+                      <a><img src="http://image31.bookschina.com/2019/zuo/3/s1894903.jpg"/></a>
+                    </div>
+                    <div class="information">
+                      <h2 class="name">
+                        <a>中国文化六讲</a>
+                      </h2>
+                      <div class="author">
+                        <a>何兹全 著</a>
+                      </div>
+                      <div class="publisher">
+                        <a>河南人民出版社</a>
+                      </div>
+                      <div class="priceWrap">
+                        <span class="sellPrice">¥9.9</span>
+                        <span class="discount">(8.2折)</span>
+                        <span class="priceTit">定价:</span>
+                        <del class="">¥12.0</del>
+                      </div>
+                      <div class="oparateButton">
+                        <Button  type="error" icon="ios-cart-outline">加入购物车</Button>
+                        <Button class="collectBtns">收藏</Button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cover">
+                      <a><img src="http://image31.bookschina.com/2019/zuo/3/s1894903.jpg"/></a>
+                    </div>
+                    <div class="information">
+                      <h2 class="name">
+                        <a>中国文化六讲</a>
+                      </h2>
+                      <div class="author">
+                        <a>何兹全 著</a>
+                      </div>
+                      <div class="publisher">
+                        <a>河南人民出版社</a>
+                      </div>
+                      <div class="priceWrap">
+                        <span class="sellPrice">¥9.9</span>
+                        <span class="discount">(8.2折)</span>
+                        <span class="priceTit">定价:</span>
+                        <del class="">¥12.0</del>
+                      </div>
+                      <div class="oparateButton">
+                        <Button  type="error" icon="ios-cart-outline">加入购物车</Button>
+                        <Button class="collectBtns">收藏</Button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cover">
+                      <a><img src="http://image31.bookschina.com/2019/zuo/3/s1894903.jpg"/></a>
+                    </div>
+                    <div class="information">
+                      <h2 class="name">
+                        <a>中国文化六讲</a>
+                      </h2>
+                      <div class="author">
+                        <a>何兹全 著</a>
+                      </div>
+                      <div class="publisher">
+                        <a>河南人民出版社</a>
+                      </div>
+                      <div class="priceWrap">
+                        <span class="sellPrice">¥9.9</span>
+                        <span class="discount">(8.2折)</span>
+                        <span class="priceTit">定价:</span>
+                        <del class="">¥12.0</del>
+                      </div>
+                      <div class="oparateButton">
+                        <Button  type="error" icon="ios-cart-outline">加入购物车</Button>
+                        <Button class="collectBtns">收藏</Button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <!--底部导航栏-->
+      <foot-nav></foot-nav>
     </div>
 </template>
 

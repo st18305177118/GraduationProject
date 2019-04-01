@@ -12,9 +12,9 @@
               <li><router-link :to="{path: '/'}">首页</router-link></li>
               <li><router-link :to="{path: '/washBook'}">淘书团</router-link></li>
               <li><router-link :to="{path: '/bestSell'}">畅销榜</router-link></li>
-              <li>五星书</li>
-              <li>新上架</li>
-              <li>9块9包邮</li>
+              <li><router-link :to="{path: '/fiveStars'}">五星书</router-link></li>
+              <li><router-link :to="{path: '/newShelves'}">新上架</router-link></li>
+              <li><router-link :to="{path: '/freeShipping'}">9块9包邮</router-link></li>
               <li>出版社浏览</li>
               <li>闲情雅趣</li>
               <li>批发</li>
@@ -304,7 +304,7 @@
           </div>
         </div>
       </div>
-      <foot-nav style="margin"/>
+      <foot-nav/>
     </div>
 </template>
 
