@@ -566,20 +566,20 @@
 </template>
 
 <script>
-  import navBar from '../../components/navBar/navBar'
-  import footNav from '../../components/footNav/footBav'
-  import topBar from '../../components/topBar/topBar'
-  import searchBar from '../../components/searchBar/searchBar'
-  export default {
-    components: {
-      navBar,
-      footNav,
-      topBar,
-      searchBar
-    }
+import navBar from '../../components/navBar/navBar'
+import footNav from '../../components/footNav/footBav'
+import topBar from '../../components/topBar/topBar'
+import searchBar from '../../components/searchBar/searchBar'
+export default {
+  components: {
+    navBar,
+    footNav,
+    topBar,
+    searchBar
   }
+}
 </script>
 
 <style lang="less">
-  @import "fiveStars";
+@import "fiveStars";
 </style>
