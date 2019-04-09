@@ -6,6 +6,7 @@ import bestSell from '@/views/bestSell/bestSell'
 import fiveStars from '@/views/fiveStars/fiveStars'
 import newShelves from '@/views/newShelves/newShelves'
 import freeShipping from '@/views/freeShipping/freeShipping'
+import login from '@/views/login/login'
 Vue.use(Router)
 
 export default new Router({
@@ -40,6 +41,11 @@ export default new Router({
       path: '/freeShipping',
       name: 'freeShipping',
       component: freeShipping
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: login
     }
   ]
 })

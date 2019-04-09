@@ -4,7 +4,7 @@
     <div class="topBar">
       <div class="loginArea">
         <b>欢迎光临图书网 请</b>
-        <a class="login">登录</a>
+        <a class="login" @click="login">登录</a>
         <span>|</span>
         <a>注册</a>
       </div>
@@ -26,6 +26,11 @@ export default {
   data () {
     return {
 
+    }
+  },
+  methods: {
+    login(){
+      this.$router.push({path: '/login'})
     }
   }
 }
