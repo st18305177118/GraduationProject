@@ -6,8 +6,11 @@ import router from './router'
 import iview from 'iview'
 import 'iview/dist/styles/iview.css'
 import axios from 'axios'
+import VueAxios from 'vue-axios'
 import scroll from 'vue-seamless-scroll'
-Vue.use(axios)
+import apiConfig from '../config/api.config'
+Vue.use(VueAxios,axios)
+axios.defaults.baseURL = apiConfig.baseUrl
 Vue.use(iview)
 Vue.use(scroll)
 Vue.config.productionTip = false

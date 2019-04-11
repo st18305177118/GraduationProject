@@ -7,6 +7,7 @@ import fiveStars from '@/views/fiveStars/fiveStars'
 import newShelves from '@/views/newShelves/newShelves'
 import freeShipping from '@/views/freeShipping/freeShipping'
 import login from '@/views/login/login'
+import register from '@/views/register/register'
 Vue.use(Router)
 
 export default new Router({
@@ -46,6 +47,11 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: login
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: register
     }
   ]
 })

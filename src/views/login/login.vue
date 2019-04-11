@@ -24,7 +24,7 @@
             <div class="loginTitle">
               <b>用户登录</b>
             </div>
-            <div style="margin-top: 50px;padding: 0 110px;">
+            <div style="margin-top: 50px;padding: 0 280px;">
               <Form :model="formItem" :label-width="80">
                 <FormItem label="用户名:" style="width: 340px;">
                   <Input v-model="formItem.input" placeholder="请输入用户名"></Input>
@@ -33,51 +33,66 @@
                   <Input v-model="formItem.input" placeholder="请输入密码"></Input>
                 </FormItem>
                 <FormItem label="验证码:" style="width: 340px;">
-                  <Input v-model="formItem.input" placeholder="请输入验证码"></Input>
-                  <div class = "captcha">
-                    <input type="text" placeholder="请输入验证码" class="yanzhengma_input" v-model="picLyanzhengma">
-                    <input type="button"  @click="createCode"  class="verification" v-model="checkCode"/>
+                  <Input v-model="formItem.input" style="width: 140px"  placeholder="请输入验证码"></Input>
+                  <div class="verify-box" style="float: right" @click="refreshCode">
+                    <Sidentify :identifyCode="identifyCode"></Sidentify>
                   </div>
+                </FormItem>
+                <FormItem style="width: 340px;">
+                  <Button type="error" class="loginBtn">登录</Button>
+                  <Button type="error" class="loginBtn" @click="register">注册</Button>
                 </FormItem>
               </Form>
             </div>
           </div>
         </div>
       </div>
+      <!--底部-->
+      <foot-bar></foot-bar>
     </div>
 </template>
 
 <script>
+  import Sidentify from '../../components/identify/identify'
+  import footBar from '../../components/footNav/footBav'
   export default {
-    created () {
-      this.createCode()
+    components: {
+      Sidentify,
+      footBar
     },
     data () {
       return {
+        identifyCodes: '1234567890',
+        identifyCode: '',
         formItem:{
           input:''
         }
       }
     },
+    mounted () {
+      this.identifyCode = ''
+      this.makeCode(this.identifyCodes,4)
+    },
     methods: {
-      // 图片验证码
-      createCode(){
-        //先清空验证码的输入
-        this.code = "";
-        this.checkCode = "";
-        this.picLyanzhengma = "";
-        //验证码的长度
-        var codeLength = 4;
-        //随机数
-        var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
-        for(var i = 0; i < codeLength; i++) {
-          //取得随机数的索引（0~35）
-          var index = Math.floor(Math.random()*36);
-          //根据索引取得随机数加到code上
-          this.code += random[index];
+      randomNum(min, max){
+        return Math.floor(Math.random() * (max - min) + min);
+      },
+      refreshCode() {
+        this.identifyCode = '';
+        this.makeCode(this.identifyCodes, 4);
+        console.log('当前验证码==',this.identifyCodes);
+      },
+      makeCode (o,l) {
+        for (let i = 0; i< l; i++) {
+          this.identifyCode += this.identifyCodes[
+            this.randomNum(0, this.identifyCodes.length)
+            ];
         }
-        //把code值赋给验证码
-        this.checkCode = this.code;
+        console.log('identifyCode',this.identifyCode)
+      },
+      /*注册*/
+      register () {
+        this.$router.push({path: '/register'})
       }
     }
   }
