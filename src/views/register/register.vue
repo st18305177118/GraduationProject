@@ -30,13 +30,13 @@
           <div style="margin-top: 50px;padding: 0 280px;">
             <Form :model="formItem" :label-width="100">
               <FormItem label="用户名:" style="width: 340px;">
-                <Input v-model="formItem.input" placeholder="请输入用户名"></Input>
+                <Input v-model="formItem.username" placeholder="请输入用户名"></Input>
               </FormItem>
               <FormItem label="密码:" style="width: 340px;">
-                <Input v-model="formItem.input" placeholder="请输入密码"></Input>
+                <Input v-model="formItem.password" placeholder="请输入密码" type="password"></Input>
               </FormItem>
               <FormItem label="确认密码:" style="width: 340px;">
-                <Input v-model="formItem.input" placeholder="请再次输入密码"></Input>
+                <Input v-model="formItem.input" placeholder="请再次输入密码" type="password"></Input>
               </FormItem>
               <FormItem label="验证码:" style="width: 340px;">
                 <Input v-model="formItem.input" style="width: 120px"  placeholder="请输入验证码"></Input>
@@ -60,6 +60,7 @@
 <script>
   import Sidentify from '../../components/identify/identify'
   import footBar from '../../components/footNav/footBav'
+  import * as register from '../../request/register'
   export default {
     components: {
       Sidentify,
@@ -70,7 +71,9 @@
         identifyCodes: '1234567890',
         identifyCode: '',
         formItem:{
-          input:''
+          input:'',
+          username: '',
+          password: ''
         }
       }
     },
@@ -97,7 +100,7 @@
       },
       /*注册*/
       register () {
-        this.$router.push({path: '/register'})
+        register.registerUser(this)
       }
     }
   }

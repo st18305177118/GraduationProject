@@ -10,7 +10,7 @@ module.exports = {
     /*路由接口代理配置*/
     proxyTable: {
       '/api':{
-        target: 'https://localhost:8080',
+        target: 'https://localhost:8888/',
         changeOrigin: true,
         pathRewrite: {
           '^/api':'/'

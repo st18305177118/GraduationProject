@@ -8,9 +8,13 @@ import 'iview/dist/styles/iview.css'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import scroll from 'vue-seamless-scroll'
-import apiConfig from '../config/api.config'
-Vue.use(VueAxios,axios)
-axios.defaults.baseURL = apiConfig.baseUrl
+import {BASE_URL} from '../config/config'
+// import Axios from './axios'
+// Vue.use(VueAxios,axios)
+axios.defaults.baseURL = BASE_URL
+Vue.prototype.$axios = axios
+axios.defaults.headers.post["Content-type"]="application/json;charset=UTF-8";
+// Vue.prototype.$axios=axios;
 Vue.use(iview)
 Vue.use(scroll)
 Vue.config.productionTip = false
