@@ -6,13 +6,13 @@
         <b>欢迎光临图书网 </b>
         <a class="login" @click="login" v-show="isLogin">登录</a>
         <span v-show="isLogin">|</span>
-        <a v-show="isLogin">注册</a>
+        <a v-show="isLogin" @click="register">注册</a>
         <b style="color: #0365b9" v-show="isShows">{{name}}</b>
-        <a class="login" @click="loginOut" v-show="isShows">安全退出</a>
+        <a class="loginOut" style="color: #e60000;" @click="loginOut" v-show="isShows">[安全退出]</a>
       </div>
       <div class="personalArea">
         <ul>
-          <li>购物车</li>
+          <li><router-link style="color: #666666" :to="{path: '/shoppingCart'}">购物车</router-link></li>
           <li>我的订单</li>
           <li>我的账户</li>
           <li>帮助中心</li>
@@ -27,15 +27,16 @@
   import Cookies from 'js-cookie'
 export default {
   created () {
-    // console.log('isLogin',Cookies.get('isShow'))
-    // console.log('isShows',Cookies.get('isShows'))
-    // this.isLogin = Cookies.get('isLogin')
-    // this.isShows = Cookies.get('isShows')
-    // console.log('isShows',this.isShows)
+    if (Cookies && Cookies.get('userName')) {
+      this.isLogin = false
+      this.isShows = true
+      this.name = Cookies.get('userName')
+    }
+    console.log('userName', Cookies.get('userName'))
   },
   data () {
     return {
-      name: Cookies.get('name'),
+      name: '',
       isLogin: true,
       isShows: false
     }
@@ -49,6 +50,9 @@ export default {
       this.$router.push({path: '/'})
       this.isLogin = true
       this.isShows = false
+    },
+    register() {
+      this.$router.push({path: '/register'})
     }
   }
 }

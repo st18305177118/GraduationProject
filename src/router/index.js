@@ -8,6 +8,7 @@ import newShelves from '@/views/newShelves/newShelves'
 import freeShipping from '@/views/freeShipping/freeShipping'
 import login from '@/views/login/login'
 import register from '@/views/register/register'
+import shoppingCart from '@/views/shoppingCart/shoppingCart'
 Vue.use(Router)
 
 export default new Router({
@@ -52,6 +53,11 @@ export default new Router({
       path: '/register',
       name: 'register',
       component: register
+    },
+    {
+      path: '/shoppingCart',
+      name: 'shoppingCart',
+      component: shoppingCart
     }
   ]
 })

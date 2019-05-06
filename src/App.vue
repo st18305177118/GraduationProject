@@ -19,4 +19,7 @@ export default {
   ul{
     list-style: none
   }
+  li{
+    cursor: pointer;
+  }
 </style>

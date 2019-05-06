@@ -13,9 +13,9 @@ export const login = (vm)=>{
       }else if(rep.data==true){
         vm.$Message.success("登录成功")
         vm.$router.push({path:'/'})
-        Cookies.set('isLogin',false)
-        Cookies.set('isShows',true)
-        Cookies.set('name',vm.formItem.username)
+        // Cookies.set('isLogin',false)
+        // Cookies.set('isShows',true)
+        Cookies.set('userName',vm.formItem.username)
         // vm.isShow=false
         // vm.isShows=true
       }

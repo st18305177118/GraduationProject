@@ -108,7 +108,7 @@
       },
       /*登录*/
       login () {
-        console.log("login")
+        console.log("loginsss")
         if(this.formItem.code==this.identifyCode){
           login.login(this)
         }else if(this.formItem.code!=this.identifyCode){

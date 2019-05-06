@@ -36,10 +36,10 @@
                 <Input v-model="formItem.password" placeholder="请输入密码" type="password"></Input>
               </FormItem>
               <FormItem label="确认密码:" style="width: 340px;">
-                <Input v-model="formItem.input" placeholder="请再次输入密码" type="password"></Input>
+                <Input v-model="formItem.passwordTrue" placeholder="请再次输入密码" type="password"></Input>
               </FormItem>
               <FormItem label="验证码:" style="width: 340px;">
-                <Input v-model="formItem.input" style="width: 120px"  placeholder="请输入验证码"></Input>
+                <Input v-model="formItem.code" style="width: 120px"  placeholder="请输入验证码"></Input>
                 <div class="verify-box" style="float: right" @click="refreshCode">
                   <Sidentify :identifyCode="identifyCode"></Sidentify>
                 </div>
@@ -71,9 +71,10 @@
         identifyCodes: '1234567890',
         identifyCode: '',
         formItem:{
-          input:'',
+          code:'',
           username: '',
-          password: ''
+          password: '',
+          passwordTrue: ''
         }
       }
     },
@@ -100,7 +101,14 @@
       },
       /*注册*/
       register () {
-        register.registerUser(this)
+        if(this.formItem.code==this.identifyCode && this.formItem.password == this.formItem.passwordTrue){
+          register.registerUser(this)
+          this.formItem = {}
+        }else if(this.formItem.code!=this.identifyCode){
+          this.$Message.error("验证码不正确!")
+        }else if(this.formItem.passwordTrue != this.formItem.password){
+          this.$Message.error('两次密码不一致')
+        }
       }
     }
   }

@@ -10,7 +10,7 @@
         <Input search enter-button="搜索" placeholder="Enter something..." />
       </div>
       <div class="notice">
-        <img style="float:left;max-width: 45px;max-height: 45px" src="@/assets/logo.png"/>
+        <img style="float:left;max-width: 45px;max-height: 45px" src="@/assets/notice.png"/>
         <vue-seamless-scroll :data="listData" :class-option="optionSingleHeight" class="seamless-warp">
           <ul class="item">
             <li v-for="item in listData" :key="item.id">
