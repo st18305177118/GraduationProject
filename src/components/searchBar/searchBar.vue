@@ -7,7 +7,7 @@
         </a>
       </div>
       <div class="searchArea">
-        <Input search enter-button="搜索" placeholder="Enter something..." />
+        <Input v-model="searchBookName" search enter-button="搜索" @on-search="searchBook" placeholder="请输入书名" />
       </div>
       <div class="notice">
         <img style="float:left;max-width: 45px;max-height: 45px" src="@/assets/notice.png"/>
@@ -24,9 +24,11 @@
 </template>
 
 <script>
+  import * as searchBook from '../../request/search'
 export default {
   data () {
     return {
+      searchBookName: '',
       listData: [{
         'title': '无缝滚动第一行无缝滚动第一行',
         'date': '2017-12-16'
@@ -58,6 +60,13 @@ export default {
         step: 1, // （调整速度的）0
         hoverStop: true // (鼠标停留停止 离开继续运行（反之则停止）)
       }
+    }
+  },
+  methods: {
+    //模糊查询
+    searchBook(){
+      this.$router.push({path: '/searchBook',query:{bookName:this.searchBookName}})
+      window.location.reload()
     }
   }
 }

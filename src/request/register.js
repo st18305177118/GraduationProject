@@ -9,7 +9,10 @@ export const getAllManager = (vm) => {
 export const registerUser = (vm) =>{
   let data ={
     username: vm.formItem.username,
-    password: vm.formItem.password
+    password: vm.formItem.password,
+    address: vm.formItem.address,
+    phone: vm.formItem.phones,
+    trueName: vm.formItem.trueName,
   }
 
   vm.$axios.post('/shi/user/register',data)

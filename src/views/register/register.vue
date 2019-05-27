@@ -22,7 +22,7 @@
       <div class="w1000">
         <div class="registerForm">
           <div class="registerTitle">
-            <b>用户登录</b>
+            <b>用户注册</b>
             <div class="backLogin">已有账号？
               <a href="/login">请登录</a>
             </div>
@@ -37,6 +37,15 @@
               </FormItem>
               <FormItem label="确认密码:" style="width: 340px;">
                 <Input v-model="formItem.passwordTrue" placeholder="请再次输入密码" type="password"></Input>
+              </FormItem>
+              <FormItem label="真实姓名:" style="width: 340px;">
+                <Input v-model="formItem.trueNames" placeholder="请输入真实姓名" ></Input>
+              </FormItem>
+              <FormItem label="手机号:" style="width: 340px;">
+                <Input v-model="formItem.phones" placeholder="请输入手机号" ></Input>
+              </FormItem>
+              <FormItem label="详细地址:" style="width: 340px;">
+                <Input v-model="formItem.address" placeholder="请输入详细地址" ></Input>
               </FormItem>
               <FormItem label="验证码:" style="width: 340px;">
                 <Input v-model="formItem.code" style="width: 120px"  placeholder="请输入验证码"></Input>
@@ -74,7 +83,10 @@
           code:'',
           username: '',
           password: '',
-          passwordTrue: ''
+          passwordTrue: '',
+          address: '',
+          phones: '',
+          trueNames: ''
         }
       }
     },

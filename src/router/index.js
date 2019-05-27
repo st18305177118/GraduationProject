@@ -9,6 +9,7 @@ import freeShipping from '@/views/freeShipping/freeShipping'
 import login from '@/views/login/login'
 import register from '@/views/register/register'
 import shoppingCart from '@/views/shoppingCart/shoppingCart'
+import searchBook from '@/views/searchBook/searchBook'
 Vue.use(Router)
 
 export default new Router({
@@ -58,6 +59,11 @@ export default new Router({
       path: '/shoppingCart',
       name: 'shoppingCart',
       component: shoppingCart
+    },
+    {
+      path: '/searchBook',
+      name: 'searchBook',
+      component: searchBook
     }
   ]
 })

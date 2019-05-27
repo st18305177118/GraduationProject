@@ -420,7 +420,7 @@
                     </div>
                     <div class="oparateButton">
                       <Button  type="error" icon="ios-cart-outline">加入购物车</Button>
-                      <Button class="collectBtns">收藏</Button>
+                      <Button class="collec tBtns">收藏</Button>
                     </div>
                   </div>
                 </li>

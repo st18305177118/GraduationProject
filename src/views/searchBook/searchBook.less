@@ -1,0 +1,279 @@
+.searchBook{
+  .content{
+    height: 2080px;
+    .w1200{
+      width: 1200px;
+      margin: auto;
+      .kindBanner{
+        margin-top: 10px;
+      }
+      .crumbsBar{
+        margin-top: 10px;
+      }
+      .container{
+        margin-top: 8px;
+        .listLeft{
+          float: left;
+          width: 198px;
+          position: relative;
+          .bookListInner{
+            border: 1px solid #e9e9e9;
+            h1{
+              height: 53px;
+              font-size: 16px;
+              color: #000;
+              font-family: 'Microsoft YaHei';
+              line-height: 53px;
+              text-indent: 19px;
+              font-weight: normal;
+              background: #f3f3f3;
+              border-bottom: 1px solid #e9e9e9;
+            }
+            li{
+              margin-bottom: 2px;
+              dt{
+                height: 30px;
+                line-height: 30px;
+                cursor: pointer;
+                text-indent: 19px;
+                position: relative
+              }
+              .cur{
+                background: #00b6f0;
+                a{
+                  color: #ffffff;
+                }
+              }
+              .js_toggledl{
+                dt{
+                  background: #ebf9fc;
+                  height: 30px;
+                  line-height: 30px;
+                  cursor: pointer;
+                  text-indent: 19px;
+                  position: relative;
+                }
+                dd{
+                  padding: 5px 0;
+                  a{
+                    display: block;
+                    line-height: 22px;
+                    color: #666666;
+                    text-indent: 20px;
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+          .hostList{
+            margin: 20px 0;
+            border: 1px solid #e9e9e9;
+            .listTitle{
+              background: #f3f3f3;
+              height: 48px;
+              line-height: 48px;
+              border-bottom: 1px solid #e9e9e9;
+              h2{
+                text-indent: 20px;
+                font-weight: normal;
+                span{
+                  color: #333;
+                  font-size: 16px;
+                  font-family: 'Microsoft YaHei';
+                }
+              }
+            }
+            .listContent{
+              border: 1px solid #eaeaea;
+              border-top-color: rgb(234, 234, 234);
+              border-top-style: solid;
+              border-top-width: 1px;
+              border-bottom-color: rgb(234, 234, 234);
+              border-bottom-style: solid;
+              border-bottom-width: 1px;
+              border-top: none;
+              border-bottom: none;
+              padding-top: 4px;
+              li{
+                position: relative;
+                border-bottom: 1px solid #eaeaea;
+                em{
+                  position: absolute;
+                  font-size: 9px;
+                  color: #7a7a7a;
+                  height: 32px;
+                  line-height: 32px;
+                  right: 10px;
+                  top: 0;
+                }
+                p{
+                  height: 34px;
+                  line-height: 34px;
+                  color: #333333;
+                  text-indent: 44px;
+                  padding-right: 35px;
+                  overflow: hidden;
+                  cursor: pointer;
+                }
+                i{
+                  position: absolute;
+                  height: 32px;
+                  line-height: 32px;
+                  font-size: 14px;
+                  font-family: 'Microsoft YaHei';
+                  font-style: normal;
+                  width: 40px;
+                  text-align: center;
+                  top: 0;
+                }
+              }
+              .red i{
+                position: absolute;
+                height: 32px;
+                line-height: 32px;
+                font-size: 14px;
+                font-family: 'Microsoft YaHei';
+                font-style: normal;
+                width: 40px;
+                text-align: center;
+                top: 0;
+                color: #e60000;
+              }
+            }
+          }
+        }
+        .listRight{
+          float: right;
+          width: 1000px;
+          .bookList{
+            overflow: hidden;
+            li{
+              float: left;
+              height: 242px;
+              width: 480px;
+              padding: 19px 10px 19px 10px;
+              overflow: hidden;
+              border: 1px solid #e9e9e9;
+              margin: 20px 0 0 20px;
+              position: relative;
+              .cover{
+                height: 200px;
+                width: 200px;
+                float: left;
+                display: inline;
+                margin-right: 15px;
+                text-align: center;
+                position: relative;
+                a img{
+                  max-height: 200px;
+                  max-width: 200px;
+                }
+              }
+              .information{
+                float: left;
+                width: 240px;
+                h2{
+                  height: 20px;
+                  overflow: hidden;
+                  font-weight: normal;
+                  line-height: 20px;
+                  margin-bottom: 3px;
+                  a{
+                    color: #0080cc;
+                    font-size: 14px;
+                    text-decoration: none;
+                  }
+                }
+                .author{
+                  height: 22px;
+                  line-height: 22px;
+                  overflow: hidden;
+                  a{
+                    color: #999;
+                  }
+                }
+                .publisher{
+                  height: 22px;
+                  line-height: 22px;
+                  overflow: hidden;
+                  a{
+                    color: #999
+                  }
+                }
+                .priceWrap{
+                  height: 24px;
+                  line-height: 24px;
+                  vertical-align: bottom;
+                  span{
+                    float: left;
+                    display: inline;
+                  }
+                  .sellPrice{
+                    font-size: 18px;
+                    color: #e60000;
+                    margin-right: 10px;
+                    font-family: 'Microsoft YaHei';
+                  }
+                  .discount{
+                    color: #666;
+                    font-family: 'Microsoft YaHei';
+                    margin-right: 15px;
+                    margin-top: 1px;
+                  }
+                  .priceTit{
+                    font-family: 'Microsoft YaHei';
+                    margin-top: 2px;
+                    margin-right: 2px;
+                    color: #999;
+                  }
+                  del{
+                    font-family: 'Microsoft YaHei';
+                    color: #999;
+                    float: left;
+                    margin-top: 2px;
+                  }
+                }
+                .oparateButton{
+                  overflow: hidden;
+                  margin-top: 35px;
+                  a{
+                    font-size: 20px;
+                  }
+                  .buyButton{
+                    line-height: 30px;
+                    text-indent: 30px;
+                    color: #fff;
+                    text-decoration: none;
+                    width: 100px;
+                    height: 30px;
+                    margin-right: 10px;
+                    background: #e43c3f;
+                    border-radius: 5px
+                  }
+                  .collectBtn{
+                    border: 1px solid #999;
+                    height: 28px;
+                    border-radius: 5px;
+                    color: #999;
+                    line-height: 28px;
+                    text-align: center;
+                    width: 48px;
+                    text-decoration: none;
+                  }
+                  .collectBtns{
+                    margin-left: 10px;
+                  }
+                  .collectBtns:hover{
+                    color: red !important;
+                    border: 1px solid red !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
